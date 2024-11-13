@@ -16,6 +16,20 @@ protocol APIRequest {
     var body: [String: Any]? { get }
 }
 
+extension APIRequest {
+    var headers: [String: String]? {
+        return nil
+    }
+    
+    var parameters: [String: String]? {
+        return nil
+    }
+    
+    var body: [String: Any]? {
+        return nil
+    }
+}
+
 enum HTTPMethod: String {
     case get = "GET"
     case post = "POST"
